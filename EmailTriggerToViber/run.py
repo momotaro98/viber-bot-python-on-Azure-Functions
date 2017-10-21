@@ -1,6 +1,10 @@
 import os
 import json
 
+import sys
+print(sys.path)
+
+'''
 from viberbot_lib.viberbot import Api
 from viberbot_lib.viberbot.api.bot_configuration import BotConfiguration
 from viberbot_lib.viberbot.api.messages.text_message import TextMessage
@@ -15,6 +19,7 @@ viber = Api(BotConfiguration(
   avatar='',
   auth_token=os.getenv('VIBER_API_KEY') or 'default'
 ))
+'''
 
 postreqdata = json.loads(open(os.environ['req']).read())
 print(postreqdata)
